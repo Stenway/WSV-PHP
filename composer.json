@@ -1,0 +1,21 @@
+{
+    "name": "stenway/wsv",
+    "description": "WhitespaceSV (WSV) reference library",
+    "type": "library",
+    "homepage": "https://www.whitespacesv.com",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Stenway\\Wsv\\": "src/Stenway/Wsv"
+        }
+    },
+    "authors": [
+        {
+            "name": "Stefan John",
+            "email": "dev@stenway.com"
+        }
+    ],
+    "require": {
+		"stenway/reliabletxt": "^0.0.1"
+	}
+}
