@@ -2,7 +2,6 @@
 
 namespace Stenway\Wsv;
 
-use \Exception as Exception;
 use \IntlChar as IntlChar;
 
 class WsvCharIterator {
@@ -15,7 +14,7 @@ class WsvCharIterator {
 	}
 	
 	function getText() : string {
-		return String::fromCodePoints(this->chars);
+		return StringUtil::fromCodePoints($this->chars);
 	}
 	
 	function getLineInfoString() : string {
@@ -135,7 +134,7 @@ class WsvCharIterator {
 	}
 	
 	function getException(string $message) {
-		return new Exception($message . " " . $this->getLineInfoString());
+		return new \Exception($message . " " . $this->getLineInfoString());
 	}
 }
 

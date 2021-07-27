@@ -16,6 +16,6 @@
         }
     ],
     "require": {
-		"stenway/reliabletxt": "^0.0.1"
+		"stenway/reliabletxt": "^0.0.2"
 	}
 }
